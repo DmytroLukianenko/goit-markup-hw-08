@@ -1,0 +1,106 @@
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: $title-color;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  // &-logo-list {
+  //   display: flex;
+  // }
+}
+
+.clients-logo-list {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo-list-item:nth-child(even) {
+    margin-left: 30px;
+  }
+  .logo-list-item:nth-last-child(2n) {
+    margin-bottom: 20px;
+  }
+}
+
+.logo-list-item {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    // width: calc((100%-1 * 30px) / 2);
+    flex-basis: 44%;
+    height: 90px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 90px;
+    flex-basis: 30%;
+    // flex-basis: calc((100%-2 * 20px) / 3);
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 20px;
+    }
+    &:nth-child(3n) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-5 * 30px) / 6);
+    height: 90px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.clients-logo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    border: 1px $accent-color solid;
+
+    & .clients-svg {
+      fill: $accent-color;
+    }
+  }
+}
+
+.clients-svg {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: #afb1b8;
+}

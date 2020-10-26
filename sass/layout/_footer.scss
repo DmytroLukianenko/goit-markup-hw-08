@@ -1,0 +1,176 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  background-color: #2f303a;
+
+  @media screen and (max-width: 767px) {
+    &-left {
+      text-align: center;
+    }
+  }
+  &-container {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+
+    .tablet-version {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-list {
+      display: inline-block;
+
+      &:nth-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+
+    .footer-contacts {
+      text-decoration: none;
+      color: $primary-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .footer-center {
+    display: block;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+    }
+  }
+
+  .footer-center-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .footer-social:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .footer-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+    .footer-svg {
+      fill: $bg-color;
+    }
+  }
+  .footer-right {
+    display: block;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      width: 60%;
+      justify-content: flex-end;
+    }
+  }
+  .text-right-container {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+      text-align: left;
+      margin-left: 93px;
+    }
+  }
+  .footer-form {
+    display: block;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+
+  .footer-button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 20px;
+    }
+
+    .icon-send {
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      fill: $bg-color;
+      margin-left: 10px;
+    }
+  }
+
+  .footer-mail {
+    width: 100%;
+    padding: 15px 16px;
+    // margin-right: 12px;
+    margin-top: 20px;
+    background-color: rgba(47, 48, 58, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $iconbg-color;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 70%;
+    }
+  }
+}

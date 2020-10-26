@@ -1,0 +1,35 @@
+.logo {
+  color: $accent-color;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 3%;
+  text-decoration: none;
+
+  &-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $accent-color;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 3%;
+  text-decoration: none;
+
+  &-span {
+    color: $bg-color;
+  }
+}
+
+.header-logo {
+  color: $title-color;
+}
+
+.logo-list:not(:last-child) {
+  margin-right: 30px;
+}

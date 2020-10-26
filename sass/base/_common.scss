@@ -1,0 +1,31 @@
+$primary-color: #757575;
+$title-color: #212121;
+$accent-color: #2196f3;
+$bg-color: #ffffff;
+$iconbg-color: #f5f4fa;
+
+.list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.page {
+  background-color: $bg-color;
+  color: $primary-color;
+  font-family: roboto, sans-serif;
+}
+
+.item {
+  display: block;
+  position: relative;
+}
+.section {
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
