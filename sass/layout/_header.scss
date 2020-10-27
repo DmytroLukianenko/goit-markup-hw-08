@@ -4,7 +4,10 @@
   padding-top: 24px;
   border-bottom: 1px solid #ececec;
   position: relative;
-
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .header-nav {
     @media screen and (max-width: 767px) {
       display: inline;
@@ -196,10 +199,14 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     display: flex;
     position: relative;
+
+    & .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
   @media screen and (min-width: 1200px) {
     width: 100%;

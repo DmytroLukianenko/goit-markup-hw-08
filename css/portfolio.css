@@ -411,6 +411,13 @@ summary {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .header .header-nav {
   justify-content: space-between;
   align-items: center;
@@ -632,10 +639,13 @@ summary {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-nav {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     display: flex;
     position: relative;
+  }
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -729,7 +739,7 @@ summary {
 
 @media screen and (min-width: 1200px) {
   .footer .footer-center {
-    text-align: center;
+    text-align: left;
   }
 }
 
